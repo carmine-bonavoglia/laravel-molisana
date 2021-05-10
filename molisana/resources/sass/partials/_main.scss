@@ -9,7 +9,7 @@
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    
+
     .card{
         width: calc(100% / 3 - 10px);
         margin-right: 5px;
@@ -58,9 +58,8 @@
 
 .description{
     background-color: $description-bg;
-    text-align: center;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 22px;
 
     .boxes{
         display: flex;

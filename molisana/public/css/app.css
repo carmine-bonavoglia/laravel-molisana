@@ -24,6 +24,15 @@ h1 {
   color: #002d75;
 }
 
+h2 {
+  width: 100%;
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 30px;
+  color: #002d75;
+}
+
 header {
   text-align: center;
 }
@@ -112,9 +121,8 @@ header ul li a:hover {
 
 .description {
   background-color: #b8dae4;
-  text-align: center;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .description .boxes {

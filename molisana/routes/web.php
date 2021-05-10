@@ -24,8 +24,28 @@ Route::get('/news', function () {
 Route::get('/products', function () {
     
     $pasta = config('pasta');
+
+    $pasta_lunga = array_filter($pasta, function ($k) {
+        return $k['tipo'] == 'lunga';
+    });
+
+    $pasta_corta = array_filter($pasta, function ($k) {
+        return $k['tipo'] == 'corta';
+    });
+
+    $pasta_cortissima = array_filter($pasta, function ($k) {
+        return $k['tipo'] == 'cortissima';
+    });
+
+    //dump($pasta_lunga, $pasta_corta, $pasta_cortissima);
     
-    $data = ['formati' => $pasta];
+    $data = [
+        'formati' => [
+            'lunga' => $pasta_lunga,
+            'corta' => $pasta_corta,
+            'cortissima' => $pasta_cortissima
+        ]
+    ];
 
     return view('products', $data);
 })->name('pagina-prodotti');
@@ -34,11 +54,17 @@ Route::get('/products', function () {
 Route::get('/dettagli/{id}', function ($id) {
     $pasta = config('pasta');
 
-    $prodotto = $pasta[$id];
+    if($id >= 0 && $id < count($pasta)){
 
-    $data = [
-        'formato' => $prodotto
-    ];
-
-    return view('dettagli', $data);
-})->name('pagina-dettagli');
+        $prodotto = $pasta[$id];
+        
+        $data = [
+            'formato' => $prodotto
+        ];
+        
+        return view('dettagli', $data);
+        } else {
+            abort('404');
+        }
+    }
+)->name('pagina-dettagli');

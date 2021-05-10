@@ -4,15 +4,18 @@
 
 @section('content')
     <div class="container">
+        @foreach ($formati as $tipo => $formato)
+        <h2>{{$tipo}}</h2>
         <div class="card-container">
-            @foreach ($formati as $key => $formato)
-                <div class="card">
-                    <img src="{{$formato['src']}}" alt="{{$formato['titolo']}}">
-                    <div class="overlay">
-                        <a href="{{route('pagina-dettagli', ['id' => $key])}}">{{$formato['titolo']}}</a> 
-                    </div>
+            @foreach ($formato as $key => $item)
+            <div class="card">
+                <img src="{{$item['src']}}" alt="{{$item['titolo']}}">
+                <div class="overlay">
+                    <a href="{{route('pagina-dettagli', ['id' => $key])}}">{{$item['titolo']}}</a> 
                 </div>
+            </div>
             @endforeach
+        @endforeach
         </div>
     </div>
 @endsection
