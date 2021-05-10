@@ -1,0 +1,58 @@
+.container-fw{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &>h2{
+        text-align: center;
+    }
+
+    .box-news{
+        width: calc(100% / 3);
+        height: 500px;
+        background-color: $menu-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: .9;
+        border: 1px solid white;
+
+        &:hover{
+            opacity: 1;
+            transition: .5s linear;
+        }
+
+        &>hr{
+            width: 20px;
+            margin: 20px 0;
+            color: white;
+        }
+
+        &>h3{
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .date{
+            color: white;
+        }
+
+        button{
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 10px;
+            color: white;
+            font-weight: 600;
+
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                color: $menu-color;
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+}

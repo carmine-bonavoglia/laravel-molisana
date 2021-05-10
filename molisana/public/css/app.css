@@ -145,6 +145,65 @@ header ul li a.active {
   text-transform: capitalize;
 }
 
+.container-fw {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-fw > h2 {
+  text-align: center;
+}
+
+.container-fw .box-news {
+  width: calc(100% / 3);
+  height: 500px;
+  background-color: #002d75;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  border: 1px solid white;
+}
+
+.container-fw .box-news:hover {
+  opacity: 1;
+  transition: 0.5s linear;
+}
+
+.container-fw .box-news > hr {
+  width: 20px;
+  margin: 20px 0;
+  color: white;
+}
+
+.container-fw .box-news > h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.container-fw .box-news .date {
+  color: white;
+}
+
+.container-fw .box-news button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.container-fw .box-news button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #002d75;
+  transition: 0.5s ease-in-out;
+}
+
 .container-footer {
   width: 80%;
   margin: 30px auto;
@@ -182,9 +241,4 @@ header ul li a.active {
 .container-footer .box-footer ul li > a:hover {
   color: #0d2240;
 }
-
-/* 
-$footer-main-color
-$footer-a-color
-*/
 

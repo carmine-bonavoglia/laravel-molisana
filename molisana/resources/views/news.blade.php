@@ -3,6 +3,43 @@
 @section('title', 'La Molisana - Sezione News')
 
 @section('content')
-    <span>Posso scrivere quello che voglio</span>
-    <span>In questo caso: NEWS</span>
+    <div class="container-fw">
+        <h2>News e approfondimenti dal mondo La Molisana</h2>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+        <div class="box-news">
+            <p class="date"><em>10/05/2021</em></p>
+            <hr>
+            <h3>Notizia in primo piano</h3>
+            <button>READ MORE</button>
+        </div>
+    </div>
 @endsection
