@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>Sono la home</p>
+    <div class="jumbotron">
+        
+    </div>
 @endsection

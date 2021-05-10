@@ -1,4 +1,96 @@
+/* COLORI */
+
 * {
-  background-color: lawngreen;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+header #logo {
+  margin-bottom: 15px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #002d75;
+  padding: 15px;
+}
+
+header ul li a:hover {
+  background-color: #b3e5fc;
+}
+
+.jumbotron {
+  height: 1080px;
+  margin-top: 15px;
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+}
+
+.card-container {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  width: calc(100% / 3 - 10px);
+  margin-right: 5px;
+  position: relative;
+}
+
+.card-container .card img {
+  width: 100%;
+}
+
+.card-container .card .overlay {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: calc(100% - 5px);
+  left: 50%;
+  top: calc(50% - 3px);
+  transform: translate(-50%, -50%);
+}
+
+.card-container .card .overlay a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #002d75;
+}
+
+.card-container .card:hover .overlay {
+  display: block;
+  background-color: rgba(128, 128, 128, 0.5);
 }
 

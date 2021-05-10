@@ -1,0 +1,50 @@
+.jumbotron{
+    height: 1080px;
+    margin-top: 15px;
+    background-image: url('../../img/molisana-home.jpg');
+}
+
+.card-container{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .card{
+        width: calc(100% / 3 - 10px);
+        margin-right: 5px;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+        
+        .overlay{
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: calc(100% - 5px);
+            left: 50%;
+            top: calc(50% - 3px);
+            transform: translate(-50%, -50%);
+            
+            a{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 32px;
+                text-align: center;
+                color: $menu-color;
+            }
+        }
+        
+        &:hover .overlay{
+            display: block;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+    }
+}

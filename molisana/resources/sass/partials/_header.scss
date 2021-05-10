@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+
+    #logo{
+        margin-bottom: 15px;
+    }
+
+    ul{
+        list-style-type: none;
+        li{
+            display: inline;
+
+            a{
+
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 20px;
+                color: $menu-color;
+                padding: 15px;
+
+                &:hover{
+                    background-color: $menu-bg;
+                }
+
+            }
+        }
+    }
+}
