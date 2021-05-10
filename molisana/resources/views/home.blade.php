@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="jumbotron">
-        
-    </div>
+    <div class="jumbotron"></div>
 @endsection

@@ -36,8 +36,6 @@ Route::get('/products', function () {
     $pasta_cortissima = array_filter($pasta, function ($k) {
         return $k['tipo'] == 'cortissima';
     });
-
-    //dump($pasta_lunga, $pasta_corta, $pasta_cortissima);
     
     $data = [
         'formati' => [
@@ -54,7 +52,7 @@ Route::get('/products', function () {
 Route::get('/dettagli/{id}', function ($id) {
     $pasta = config('pasta');
 
-    if($id >= 0 && $id < count($pasta)){
+    if(is_numeric($id) && $id >= 0 && $id < count($pasta)){
 
         $prodotto = $pasta[$id];
         

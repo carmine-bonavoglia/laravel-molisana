@@ -1,0 +1,44 @@
+.container-footer{
+
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    
+    .box-footer{
+        width: calc(100% / 4);
+        padding: 0 30px;
+
+        h4{
+            font-size: 26px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .img-footer{
+            width: 10%;
+            margin-top: 30px;
+        }
+
+        ul{
+            list-style: none;
+            li>a{
+                text-decoration: none;
+                color: $footer-a-color;
+                font-size: 22px;
+                line-height: 1.6;
+
+                &:hover{
+                    color: $footer-main-color;
+                }
+            }
+        }
+    
+    }
+}
+
+
+/* 
+$footer-main-color
+$footer-a-color
+*/

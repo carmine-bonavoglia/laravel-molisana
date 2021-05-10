@@ -61,6 +61,11 @@ header ul li a:hover {
   background-color: #b3e5fc;
 }
 
+header ul li a.active {
+  background-color: #002d75;
+  color: white;
+}
+
 .jumbotron {
   height: 1080px;
   margin-top: 15px;
@@ -139,4 +144,47 @@ header ul li a:hover {
   margin-top: 15px;
   text-transform: capitalize;
 }
+
+.container-footer {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-footer .box-footer {
+  width: calc(100% / 4);
+  padding: 0 30px;
+}
+
+.container-footer .box-footer h4 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.container-footer .box-footer .img-footer {
+  width: 10%;
+  margin-top: 30px;
+}
+
+.container-footer .box-footer ul {
+  list-style: none;
+}
+
+.container-footer .box-footer ul li > a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.container-footer .box-footer ul li > a:hover {
+  color: #0d2240;
+}
+
+/* 
+$footer-main-color
+$footer-a-color
+*/
 

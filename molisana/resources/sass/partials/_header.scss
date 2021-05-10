@@ -22,6 +22,11 @@ header{
                     background-color: $menu-bg;
                 }
 
+                &.active{
+                    background-color: $menu-color;
+                    color: white;
+                }
+
             }
         }
     }
