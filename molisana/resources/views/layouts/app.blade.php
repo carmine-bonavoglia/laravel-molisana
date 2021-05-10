@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
-<title>@yield('title', 'La Molisana - La buona pasta')</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    @yield('css')
+    <title>@yield('title', 'La Molisana - La buona pasta')</title>
 </head>
 <body>
     @include('partials.header')

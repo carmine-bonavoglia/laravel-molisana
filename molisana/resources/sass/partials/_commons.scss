@@ -12,3 +12,12 @@ body{
     width: 90%;
     margin: auto;
 }
+
+h1{
+    text-align: center;
+    margin: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    color: $menu-color;
+}
